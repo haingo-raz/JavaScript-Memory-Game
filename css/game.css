@@ -1,0 +1,163 @@
+body {
+    height: 100vh; 
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/*hide game information*/
+.gameInfo{
+    display:none;
+}
+
+.gameInfo ul{
+    margin-top:30px;
+    display:flex;
+}
+
+.gameInfo ul li{
+    width: 33.33%; 
+    list-style:none;
+    font-weight:bold;
+}
+
+.btnlist{
+    display: flex;
+    justify-content: center;
+}
+
+/*buttons*/
+#playbtn{
+    background: #ffb347;
+    width:90px;
+    border:none;
+    font-weight:bold;
+    margin-top:20px;
+    padding:15px 0px;
+    border: 1px solid #ffa343;
+}
+
+/*Style play button on hover*/
+#playbtn:hover {
+    transform:scale(1.05);
+}
+
+/*style the image demo */
+#imgDemo{
+    transform:scale(0.8);
+}
+
+/*initially hide game levels*/
+#easy-mode, #medium-mode, #difficult-mode{
+    display:none;
+}
+
+
+/*Style the cards container*/ 
+.easy-card-container, .med-card-container, .diff-card-container{
+    perspective:1000px;
+    margin:30px auto;
+    background:rgb(247, 244, 244);
+    border:1px solid #EEC643;
+    display:flex;
+    flex-wrap:wrap; /*put the cards inside the container*/
+    width: 312px;
+}
+
+.easy-card-container{
+    height: 216px;   
+}
+
+.med-card-container{
+    height: 324px;
+}
+
+.diff-card-container{  
+    height:432px;
+}
+
+/*Style the cards*/
+.card{
+    width:67.5px;
+    height:97.5px;
+    position:relative;
+    margin:5px;
+    transform-style:preserve-3d;
+    /*add a transition to the transform property*/
+    transition: transform .5s; 
+
+}
+
+/*define the class turn which makes the cards flip*/
+.card.turn{
+    transform:rotateY(180deg);
+}
+
+/*resize front and back of the cards*/
+.easy-card-container img, .med-card-container img, .diff-card-container img{
+    height:90px;
+    width:65px;
+}
+
+.front-card,.back-card{
+    position:absolute; 
+    border-radius:3px;
+    backface-visibility: hidden;
+}
+
+
+.front-card{
+    transform: rotateY(180deg);
+}
+
+/*Modal: hidden by default*/
+.win-modal-overlay, .time-up-modal-overlay{ 
+    display:none;
+    border: 3px solid #F49F0A;
+    border-radius:10px;
+    width:30%;
+    padding:20px;
+    height:230px; 
+    background:	#FFFFE0;
+    position:absolute;
+    top:255px;
+    left:440px;
+}
+
+.modal-content{
+    text-align:center;
+}
+
+/*put buttons in the same line*/
+.outer-btn{
+    display: inline-block;
+    margin: 0 auto;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.modal-content img, .score-btn, #imgDemo{
+    display:flex;
+    margin: 10px auto;
+}
+
+.modal-btn{
+    padding:5px 8px;
+    margin:5px 30px;
+    border-radius:5px;
+    border:2px solid #EEC643;
+    color: #fff;
+    background:#EEC643;
+}
+
+.modal-btn:hover{
+    color:black;
+    border:2px solid #EEC643;
+    background:#fff;
+}
+
+
+
+
+
