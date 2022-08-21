@@ -16,7 +16,7 @@
     function outputBanner(){
         echo '
         <div id="banner" class="centerText">
-            <a href="game.php"><h1>Memory Game</h1><a>
+            <a href="index.php"><h1>Memory Game</h1><a>
         </div>
         ';
     }
