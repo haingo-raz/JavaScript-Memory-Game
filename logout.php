@@ -5,7 +5,7 @@
         alert("No user is logged in!");
         
         //redirect to home
-        location.replace("game.php");
+        location.replace("index.php");
 
     } else{
 
@@ -18,7 +18,7 @@
         alert("Logout succesful!")
 
         //redirect to home
-        location.replace("game.php");
+        location.replace("index.php");
     }
 
 </script>

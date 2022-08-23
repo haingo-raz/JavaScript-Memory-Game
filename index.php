@@ -1,16 +1,12 @@
 <?php
     //link to external php file
     include 'common.php';
-
     //output the banner
     outputHeader("Play the Memory Game");  
-
     //output banner at the top of the page-->
     outputBanner();
-
     //output navigation  bar
     outputNavBar("Game");
-
 ?>
 
         
@@ -21,17 +17,27 @@
 
 
 <!--descriptive text on the home page-->
-<div class="welcome" id="welcomeText">
-    <p>Do you want to have fun while training your brain? Are you looking for an activity to pass your free time at home? Maybe at work?
-    Did you discover our website by mistake? Do you want to play a cardgame? Either way, you are at the right place. Welcome to the 
-    popular Memory Game! If you are new here, we have a suitable <a href="howtoplay.php">guide</a> for you. Otherwise, you can play by clicking on the play button below.</p> 
+<div class="content">
+    <div id="imgDemoContainer">
+        <img id="imgDemo" src="./assets/ImageDemo.png" alt="imgDemo" title="Game Demo">
+    </div>
+
+    <div class="text">
+        <div class="text-container">
+            <div class="welcome" id="welcomeText">
+                <p>Do you want to have fun while training your brain? Are you looking for an activity to pass your free time at home? Maybe at work?
+                Did you discover our website by mistake? Do you want to play a cardgame? Either way, you are at the right place. Welcome to the 
+                popular Memory Game! If you are new here, we have a suitable <a href="howtoplay.php">guide</a> for you. Otherwise, you can play by clicking on the play button below.</p> 
+            </div>
+
+            <div class="btnlist">
+                <button id="playbtn" onclick="startGame(); displayEasyLevel();">Play</button>
+            </div>
+        </div>
+    </div>
+
 </div>
 
-
-<div class="btnlist">
-    <!--Play button to start the game-->
-    <button id="playbtn" onclick="startGame(); displayEasyLevel();">Play</button>
-</div>
 
 
 <!--Display information / details about the game-->
@@ -43,10 +49,6 @@
     </ul>
 </div>
 
-
-<div id="imgDemoContainer">
-   <img id="imgDemo" src="./assets/ImageDemo.png" alt="imgDemo" title="Game Demo">
-</div>
 
 <!--Easy mode : 8 cards -->
 <div class="easy-mode" id="easy-mode">
@@ -291,7 +293,7 @@
             <!--Link to the rankings page-->
             <button class="modal-btn" onclick="location.href='rankings.php';">Check my score</button>
             <!--Link to the game page to play again-->
-            <button class="modal-btn" onclick="location.href='game.php';">Play again</button>   
+            <button class="modal-btn" onclick="location.href='index.php';">Play again</button>   
         </div>
     </div>
 </div>

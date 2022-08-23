@@ -7,7 +7,9 @@
                 <meta charset="UTF-8">
                 <title>'.$title.'</title>
                 <link rel="stylesheet" href="./css/style.css">
+                <link rel="stylesheet" href="./css/index.css">
                 <link rel="stylesheet" href="./css/game.css">
+                <link rel="stylesheet" href="./css/rules.css">
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             </head>
             <body>';
@@ -44,9 +46,9 @@
 
     function outputFooter(){
         echo '
-        </body>
-        <footer class="centerText">
-            <p><b>Haingo Razafindranto || Memory Game || 2021</b></p>
-        </footer>
+            </body>
+            <footer class="centerText">
+                <p><b> Made with 💖 by HR || Memory Game || 2021</b></p>
+            </footer>
         </html>';
     }
