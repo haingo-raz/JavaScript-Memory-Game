@@ -22,37 +22,10 @@ body {
     font-weight:bold;
 }
 
-.btnlist{
-    display: flex;
-    justify-content: center;
-}
-
-/*buttons*/
-#playbtn{
-    background: #ffb347;
-    width:90px;
-    border:none;
-    font-weight:bold;
-    margin-top:20px;
-    padding:15px 0px;
-    border: 1px solid #ffa343;
-}
-
-/*Style play button on hover*/
-#playbtn:hover {
-    transform:scale(1.05);
-}
-
-/*style the image demo */
-#imgDemo{
-    transform:scale(0.8);
-}
-
 /*initially hide game levels*/
 #easy-mode, #medium-mode, #difficult-mode{
     display:none;
 }
-
 
 /*Style the cards container*/ 
 .easy-card-container, .med-card-container, .diff-card-container{
@@ -155,6 +128,17 @@ body {
     color:black;
     border:2px solid #EEC643;
     background:#fff;
+}
+
+@media only screen and (max-width: 967px) {
+    .easy-card-container, .med-card-container, .diff-card-container{
+        width: 100%;
+    }
+    .card{
+        flex-basis: 22%;
+        display: flex;
+        align-items: center;
+    }
 }
 
 

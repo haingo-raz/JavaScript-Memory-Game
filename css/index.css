@@ -1,0 +1,77 @@
+.content{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.imgDemoContainer{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imgDemo{
+    transform:scale(0.8);
+} 
+
+.text{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.welcome{
+    align-items: center;  
+}
+
+/*Style the text in the landing page*/
+.welcome p{ 
+    line-height:1cm;
+    text-align:justify;
+    font-weight:bold;
+    font-size: 16px;
+}
+
+.btnlist{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/*buttons*/
+#playbtn{
+    background: #ffb347;
+    width: 100%;
+    border:none;
+    font-weight:bold;
+    margin-top:20px;
+    padding:15px 0px;
+    border: 1px solid #ffa343;
+}
+
+/*Style play button on hover*/
+#playbtn:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 967px) {
+    .content{
+        flex-direction: column;
+    }
+    .imgDemoContainer, .text{
+        flex-basis: 100%;
+    }
+    .text{
+        order: 1;
+    }
+    .text-container{
+        width: 80%;
+    }
+    .imgDemoContainer{
+        order: 2;
+    }
+}
+
+
