@@ -28,14 +28,13 @@ function startGame(){
 
   //disable the play button after click
   let button = document.getElementById('playbtn');
-  button.disabled = true;
   button.style.display ="none";
 
   //define the sound when cards are matching
   matchSound = new sound("./assets/winSound.wav");
 
   //hide descriptive text 
-  document.getElementById("welcomeText").style.display="none";
+  document.getElementById("content").style.display="none";
 
   //show game details information
   document.getElementById("gameInfo").style.display="block";
@@ -197,8 +196,6 @@ function closeWinModal(){
 //=======================================
 //Display the easy level
 function displayEasyLevel(){  
-  //hide the image demonstration 
-  document.getElementById("imgDemoContainer").style.display = "none";
 
   //show the easy level
   document.getElementById("easy-mode").style.display = "block";
