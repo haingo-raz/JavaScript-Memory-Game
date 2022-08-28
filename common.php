@@ -5,9 +5,11 @@
             <html lang="en">
             <head>
                 <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
                 <title>'.$title.'</title>
                 <link rel="stylesheet" href="./css/style.css">
                 <link rel="stylesheet" href="./css/index.css">
+                <link rel="stylesheet" href="./css/nav.css">
                 <link rel="stylesheet" href="./css/game.css">
                 <link rel="stylesheet" href="./css/rules.css">
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,7 +20,7 @@
     function outputBanner(){
         echo '
         <div id="banner" class="centerText">
-            <a href="index.php"><h1>Memory Game</h1><a>
+            <a href="index.php"><h1>Memory Game</h1></a>
         </div>
         ';
     }
@@ -33,7 +35,7 @@
 
             //Output the links
             for($x=0; $x<4; $x++){
-                echo '<li ><a ';
+                echo '<li><a ';
                 if($linkNames[$x] == $currentPage){
                     echo 'class="selected"';
                 }
@@ -48,7 +50,7 @@
         echo '
             </body>
             <footer class="centerText">
-                <p><b> Made with 💖 by HR || Memory Game || 2021</b></p>
+                <p><b> Made with 💖 by <a href="https://github.com/haingo-raz">HR<a> || Memory Game || 2021</b></p>
             </footer>
         </html>';
     }

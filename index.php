@@ -11,22 +11,22 @@
 
         
 <!--No sign in Notification-->
-<div class="loginInfo" id="loginInfo">
+<!-- <div class="loginInfo" id="loginInfo">
     <a href="login.php"><i class="fa fa-info-circle" style="font-size:24px"></i> Not signed in. No scores are saved.</a>
-</div>
+</div> -->
 
 
 <!--descriptive text on the home page-->
-<div class="content">
-    <div id="imgDemoContainer">
+<div class="content" id="content">
+    <div class="imgDemoContainer">
         <img id="imgDemo" src="./assets/ImageDemo.png" alt="imgDemo" title="Game Demo">
     </div>
 
     <div class="text">
         <div class="text-container">
             <div class="welcome" id="welcomeText">
-                <p>Do you want to have fun while training your brain? Are you looking for an activity to pass your free time at home? Maybe at work?
-                Did you discover our website by mistake? Do you want to play a cardgame? Either way, you are at the right place. Welcome to the 
+                <p>Do you want to have fun while training your brain? Are you looking for an activity to pass your free time at home? 
+                 Do you want to play a cardgame? Either way, you are at the right place. Welcome to the 
                 popular Memory Game! If you are new here, we have a suitable <a href="howtoplay.php">guide</a> for you. Otherwise, you can play by clicking on the play button below.</p> 
             </div>
 
@@ -37,7 +37,6 @@
     </div>
 
 </div>
-
 
 
 <!--Display information / details about the game-->

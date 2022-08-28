@@ -16,7 +16,7 @@
 <form id="loginForm" onsubmit="return false">    
     <div class="login-container">
         <!--title-->
-        <h2 class="centerText">Login</h2>
+        <h3 class="centerText">Login</h3>
 
         <hr>
            

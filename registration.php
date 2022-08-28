@@ -17,7 +17,7 @@
         
     <div class="register-container">
         <!--title-->
-        <h2 class="centerText">Register</h2>
+        <h3 class="centerText">Register</h3>
 
         <hr> 
         
