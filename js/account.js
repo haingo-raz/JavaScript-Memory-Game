@@ -85,7 +85,7 @@ function login() {
 
           setTimeout( () => {
             //redirect to game page
-            location.replace('game.php');
+            location.replace('index.php');
           }, "2000")
   
         }else { //if incorrect password entered
