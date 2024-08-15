@@ -1,6 +1,5 @@
-//Access the cards 
 //The game has been inspired from 'https://www.youtube.com/watch?v=ZniVgo8U7ek'
-
+//Access the cards 
 const cards = document.querySelectorAll('.card');
 
 //creating variables
@@ -19,7 +18,6 @@ var CORRECT_BONUS = 10; //points added for each correct match
 const movesCount = document.querySelector(".moves-counter");
 let moves = 0;
 
-//==========================
 //function that starts the game
 function startGame(){
 
@@ -39,8 +37,6 @@ function startGame(){
   //show game details information
   document.getElementById("gameInfo").style.display="block";
 }
-
-//======================================================
 
 //allow card flipping 
 function turnCard() { 
@@ -67,8 +63,6 @@ function turnCard() {
         //function to check if the two flipped cards have the same framework 
         checkMatchingCards();
 }
-
-//=======================================
 
 //compare cards to see if they match 
 function checkMatchingCards(){
@@ -97,8 +91,6 @@ function checkMatchingCards(){
     }
 }
 
-//=======================================
-
 //freeze matching cards 
 function disableMatchingCards(){
 
@@ -108,9 +100,6 @@ function disableMatchingCards(){
 
   resetCardsBoard();
 }
-
-
-//=======================================
 
 //unflip unmatching cards
 function unflipCards(){
@@ -129,7 +118,6 @@ function unflipCards(){
   }, 1500); //delay of 1.5 seconds
 }
 
-//=======================================
 
 //reset the cardboard
 function resetCardsBoard(){
@@ -137,7 +125,6 @@ function resetCardsBoard(){
     [cardOne, cardTwo] = [null, null];
 }
 
-//=======================================
 
 //attach an event listner to each one of the cards : flip the cards 
 cards.forEach(card => card.addEventListener('click', turnCard));
@@ -186,14 +173,11 @@ function startTimer(){
   }
 }
 
-//=======================================================
-
 //close the win modal
 function closeWinModal(){
   document.getElementById("win-modal-overlay").style.display = "none";
 }
 
-//=======================================
 //Display the easy level
 function displayEasyLevel(){  
 
@@ -248,9 +232,6 @@ function incrementScore(num) {
   updateScore();
 }
 
-
-//======================================================
-
 //function to increment the number of moves
 function incrementMoves(){
 
@@ -261,9 +242,7 @@ function incrementMoves(){
   moves++;
 }
 
-//========================================
 //Sounds effect
-//creating an object constructor to handle sounds object
 function sound(src) {
   this.sound = document.createElement("audio");
   this.sound.src = src;
@@ -278,7 +257,6 @@ function sound(src) {
     this.sound.pause();
   }
 }
-//========================
 
 //function to update score and save high score
 function updateScore(){
@@ -295,9 +273,3 @@ function updateScore(){
     }
   }
 }
-
-
-
-
-
-

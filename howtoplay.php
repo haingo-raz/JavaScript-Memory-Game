@@ -33,6 +33,5 @@
     </ul>
 </div>
 
-<!--output the footer from the common.php file-->
 <?php
     outputFooter();

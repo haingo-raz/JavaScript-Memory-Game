@@ -105,4 +105,3 @@ function checkLogin(){
       document.getElementById("loginInfo").style.display="none";
   }
 }
-

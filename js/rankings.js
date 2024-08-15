@@ -21,4 +21,3 @@ function loadRankingTable(){
     //generate the table
     document.getElementById("rankings-table").innerHTML = strTable;
 }
-

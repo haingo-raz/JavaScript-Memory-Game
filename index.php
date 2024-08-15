@@ -297,13 +297,8 @@
     </div>
 </div>
 
-
-<!--JavaScript-->
 <script src="./js/app.js"></script>
 <script src="./js/account.js"></script>
 
-<!--Footer-->
 <?php
-    outputFooter(); 
-
-    
+    outputFooter();   
