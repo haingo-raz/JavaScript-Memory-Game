@@ -1,24 +1,20 @@
+<?php
+session_start();
+session_destroy();
+?>
+
 <script>
-    
-    //The button doesn't work if no user is logged in
-    if (sessionStorage.length == 0){
+    // The button doesn't work if no user is logged in
+    if (sessionStorage.length == 0) {
         alert("No user is logged in!");
-        
-        //redirect to home
+        // Redirect to home
         location.replace("index.php");
-
-    } else{
-
-        //show logout  button
-        document.get
-
-        //clean session storage
+    } else {
+        // Clean session storage
         sessionStorage.clear();
 
-        alert("Logout succesful!")
-
-        //redirect to home
+        alert("Logout successful!");
+        // Redirect to home
         location.replace("index.php");
     }
-
 </script>

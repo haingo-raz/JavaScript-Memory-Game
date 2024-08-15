@@ -32,7 +32,7 @@ nav li{
     list-style: none;
 }
 
-nav li a{
+nav li a, .nav-username{
     text-decoration: none;
     color:#fff;
     font-weight: bold;

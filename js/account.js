@@ -51,49 +51,39 @@ function register() {
       }     
     }  
 } 
-  
-    
+   
 //function used for login
 function login() {
-  
-    //access and store entered value inputs from login form
-    let username1 = document.getElementById('userUsernameInput').value;
-    let password2 = document.getElementById('userPwInput').value;
+  let username1 = document.getElementById('userUsernameInput').value;
+  let password2 = document.getElementById('userPwInput').value;
+  let loginFeedback = document.getElementById('loginFeedback');
 
-    
-    let loginFeedback = document.getElementById('loginFeedback');
-  
-    //if username entered is not stored in local storage
-    if (localStorage[username1] == undefined) {
-        //alert the user
-        loginFeedback.innerHTML = 'Account does not exist.';
-    } else {  //if the username entered is found in the local storage
-        //retrieve the username 
-        let userObj = JSON.parse(localStorage[username1]);
-        
-        // if the correct password is entered
-        if (password2 == userObj.pw) {
-
+  if (localStorage[username1] == undefined) {
+      loginFeedback.innerHTML = 'Account does not exist.';
+  } else {
+      let userObj = JSON.parse(localStorage[username1]);
+      if (password2 == userObj.pw) {
           loginFeedback.innerHTML = 'Success';
-
-          //store username in session storage
           sessionStorage.loggedInUsr = userObj.username;
-  
-          //clear all input fields only when the user has succesfully logged in
           document.getElementById("loginForm").reset();
 
+          // Set PHP session via AJAX
+          fetch('set_session.php', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({ username: userObj.username })
+          });
 
-          setTimeout( () => {
-            //redirect to game page
-            location.replace('index.php');
-          }, "2000")
-  
-        }else { //if incorrect password entered
+          setTimeout(() => {
+              location.replace('index.php');
+          }, 2000);
+      } else {
           loginFeedback.innerHTML = "Incorrect password.";
       }
-    }
+  }
 }
-
 
 //Check if a user is logged in 
 function checkLogin(){
