@@ -299,6 +299,7 @@
 
 <script src="./js/app.js"></script>
 <script src="./js/account.js"></script>
+<script src="./js/display.js"></script>
 
 <?php
     outputFooter();   
