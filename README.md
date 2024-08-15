@@ -13,6 +13,21 @@ This project is a  javascript-based memory card game whereby
 - PHP
 - Browser local storage & session storage
 
+## How to run this project on your computer
+To run this project on your computer, you will need to use XAMPP or a similar tool to set up a local server environment. 
+
+Here are the steps to run the project:
+
+1. Install XAMPP or any other local server tool of your choice.
+2. Clone the repository to your local machine.
+3. Navigate to the `htdocs` folder in your XAMPP installation directory.
+4. Copy the cloned repository into the `htdocs` folder with the command `git clone https://github.com/haingo-raz/Javascript-memory-game.git`
+5. Start the XAMPP control panel and start the Apache server.
+6. Open your web browser and enter `http://localhost/Javascript-memory-game` in the address bar.
+7. You should now be able to access the project and play the game.
+
+Please note that the exact steps may vary depending on your specific setup. Make sure to adjust the file paths accordingly if you are using a different local server tool.
+
 ## UI
 
 ### Homepage
