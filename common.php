@@ -8,7 +8,7 @@ function outputHeader($title){
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <title>'.$title.'</title>
-            <link rel="stylesheet" href="./css/style.css">
+            <link rel="stylesheet" href="./css/style.css?<?php echo time(); ?>">
             <link rel="stylesheet" href="./css/index.css">
             <link rel="stylesheet" href="./css/nav.css">
             <link rel="stylesheet" href="./css/game.css">
@@ -61,6 +61,11 @@ function outputNavBar($currentPage){
         echo '
         </ul>  
     </nav>';
+    if (!$isLoggedIn) {
+        echo '<div class="loginInfo" id="loginInfo">';
+            echo '<a href="login.php"><i class="fa fa-info-circle" style="font-size:24px"></i> Not signed in. No scores are saved.</a>';
+        echo '</div>';
+    }
 }
 
 function outputFooter(){

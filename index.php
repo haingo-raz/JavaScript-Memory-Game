@@ -9,13 +9,6 @@
     outputNavBar("Game");
 ?>
 
-        
-<!--No sign in Notification-->
-<!-- <div class="loginInfo" id="loginInfo">
-    <a href="login.php"><i class="fa fa-info-circle" style="font-size:24px"></i> Not signed in. No scores are saved.</a>
-</div> -->
-
-
 <!--descriptive text on the home page-->
 <div class="content" id="content">
     <div class="imgDemoContainer">
